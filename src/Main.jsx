@@ -98,7 +98,7 @@ export default function Main() {
                     </NumContainer>
                     <NumContainer>
                         <Num current={selectedCount >= 3}>3</Num>
-                        <Text elected={selectedCount >= 3}>Confirm Data</Text>
+                        <Text selected={selectedCount >= 3}>Confirm Data</Text>
                     </NumContainer>
                 </CountForm>
                 <DisplayContainer>
@@ -119,7 +119,7 @@ export default function Main() {
                     }
                     {selectedCount === 3 &&
                         <DisplayWrapper>
-                            <Text selected={true}>Choose the title</Text>
+                            <Text selected={true} >Choose the title</Text>
                             <ButtonContainer>
                                 <Button onClick={() => setSelectedCount(2)}>Go back</Button>
                                 <Button onClick={() => setSelectedCount(4)}>Confirm Data</Button>
